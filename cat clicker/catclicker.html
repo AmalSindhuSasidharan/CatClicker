@@ -5,25 +5,58 @@
     <title>CAT CLICKER</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="script/jquery-3.2.1.min.js"></script>
+    <script src="script/script.js"></script>
 
 </head>
 <body>
- <div id="imagepart">
- <img src="images/cat.jpg" alt="cat" id="catclick">
-  </div>
-  <div class="counter">
 
-      <h3 class="clicking"></h3>
-  </div>
-            <script type="text/javascript">
 
-            var clickno=0;
-          $("#catclick").click(function(){
-             clickno=clickno+1;
-                console.log(clickno);
-           $(".clicking").text("No: of times clicked = "+clickno);
+ <div id="imagepart1">
+ <div>
+   <h1>name:pony</h1>
+ </div>
+          <div>
+              <img src="images/cat.jpg" alt="cat" id="catclick1">
+          </div>
+          <div class="counter1">
+              <h3 class="clicking1"></h3>
+          </div>
+  </div>
+
+
+<div id="imagepart2">
+<div>
+   <h1>name:tong</h1>
+ </div>
+          <div>
+              <img src="images/cat.jpg" alt="cat" id="catclick2">
+          </div>
+          <div class="counter2">
+             <h3 class="clicking2"></h3>
+          </div>
+  </div>
+
+
+
+
+
+     <script type="text/javascript">
+
+// for first cat picture
+            var clickno1=0;
+          $("#catclick1").click(function(){
+             clickno1=clickno1+1;
+                console.log(clickno1);
+           $(".clicking1").text("No: of times clicked = "+clickno1);
           });
 
+// for second cat picture
+            var  clickno2=0;
+          $("#catclick2").click(function(){
+             clickno2=clickno2+1;
+                console.log(clickno2);
+           $(".clicking2").text("No: of times clicked = "+clickno2);
+          });
 
 
 // trying vanilla js
@@ -35,6 +68,9 @@
     // document.getElementsByClassName("counter").innerHTML="No: of times clicked = "+number;
     // // console.log( document.getElementsByClassName("counter"));
     //       });
+
+
+
 
       </script>
 </body>
